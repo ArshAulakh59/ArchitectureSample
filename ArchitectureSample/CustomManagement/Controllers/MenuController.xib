@@ -6,9 +6,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListController" customModule="ArchitectureSample" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuController" customModule="ArchitectureSample" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="z9k-Qb-TYH" id="E8S-4A-qGE"/>
+                <outlet property="tableView" destination="2MM-Mw-WSK" id="lxR-hv-SGW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,16 +17,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z9k-Qb-TYH">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2MM-Mw-WSK">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="z9k-Qb-TYH" secondAttribute="bottom" id="5cd-VK-mZ9"/>
-                <constraint firstAttribute="trailing" secondItem="z9k-Qb-TYH" secondAttribute="trailing" id="NaW-Ew-auE"/>
-                <constraint firstItem="z9k-Qb-TYH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pZB-aJ-d3q"/>
-                <constraint firstItem="z9k-Qb-TYH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qSn-wN-AGy"/>
+                <constraint firstItem="2MM-Mw-WSK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2CO-n2-dgr"/>
+                <constraint firstItem="2MM-Mw-WSK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IfG-ob-OB2"/>
+                <constraint firstAttribute="bottom" secondItem="2MM-Mw-WSK" secondAttribute="bottom" id="LXF-b9-Q16"/>
+                <constraint firstAttribute="trailing" secondItem="2MM-Mw-WSK" secondAttribute="trailing" id="RfY-fy-zPf"/>
             </constraints>
         </view>
     </objects>

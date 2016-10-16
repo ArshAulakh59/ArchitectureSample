@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 //MARK: Interface
 class ListController: UIViewController {
@@ -14,13 +15,12 @@ class ListController: UIViewController {
     //Outlets
     @IBOutlet fileprivate weak var tableView: UITableView!
     //Variables
-    var dataSource: NSObject {
+    var dataSource: DataSourceProtocol? = nil {
         didSet {
-            tableView.reloadData()
+            self.title = dataSource?.title
+            dataSource?.updateTable(tableView: tableView)
         }
     }
-    //Constants
-    let 
     
     //MARK: Initialisation
     init() {
@@ -37,5 +37,13 @@ extension ListController {
     //MARK: System
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Add Menu Button
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: sideMenu, action: #selector(SlideMenuController.openLeft))
+        
+        //Make preselection
+        if dataSource == nil {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: String(describing: ListController.viewDidLoad)), object: nil)
+        }
     }
 }

@@ -14,6 +14,14 @@
 		E924453D1DB35F760048B824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924453A1DB35F760048B824 /* AppDelegate.swift */; };
 		E92445431DB360C10048B824 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92445411DB360C10048B824 /* ListController.swift */; };
 		E92445441DB360C10048B824 /* ListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92445421DB360C10048B824 /* ListController.xib */; };
+		E9FA35691DB3630A002C5F7A /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA35671DB3630A002C5F7A /* MenuController.swift */; };
+		E9FA356A1DB3630A002C5F7A /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FA35681DB3630A002C5F7A /* MenuController.xib */; };
+		E9FA356D1DB363AA002C5F7A /* SideMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA356C1DB363AA002C5F7A /* SideMenuDataSource.swift */; };
+		E9FA356F1DB36EA6002C5F7A /* CatsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA356E1DB36EA6002C5F7A /* CatsDataSource.swift */; };
+		E9FA35711DB36EB7002C5F7A /* DogsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA35701DB36EB7002C5F7A /* DogsDataSource.swift */; };
+		E9FA35731DB36EE2002C5F7A /* BirdsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA35721DB36EE2002C5F7A /* BirdsDataSource.swift */; };
+		E9FA35751DB36EF1002C5F7A /* FishDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA35741DB36EF1002C5F7A /* FishDataSource.swift */; };
+		E9FA35771DB37E03002C5F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA35761DB37E03002C5F7A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		E924453A1DB35F760048B824 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CustomManagement/AppDelegate.swift; sourceTree = "<group>"; };
 		E92445411DB360C10048B824 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		E92445421DB360C10048B824 /* ListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListController.xib; sourceTree = "<group>"; };
+		E9FA35671DB3630A002C5F7A /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		E9FA35681DB3630A002C5F7A /* MenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
+		E9FA356C1DB363AA002C5F7A /* SideMenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuDataSource.swift; path = CustomManagement/ViewModels/SideMenuDataSource.swift; sourceTree = "<group>"; };
+		E9FA356E1DB36EA6002C5F7A /* CatsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatsDataSource.swift; path = CustomManagement/ViewModels/CatsDataSource.swift; sourceTree = "<group>"; };
+		E9FA35701DB36EB7002C5F7A /* DogsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DogsDataSource.swift; path = CustomManagement/ViewModels/DogsDataSource.swift; sourceTree = "<group>"; };
+		E9FA35721DB36EE2002C5F7A /* BirdsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BirdsDataSource.swift; path = CustomManagement/ViewModels/BirdsDataSource.swift; sourceTree = "<group>"; };
+		E9FA35741DB36EF1002C5F7A /* FishDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FishDataSource.swift; path = CustomManagement/ViewModels/FishDataSource.swift; sourceTree = "<group>"; };
+		E9FA35761DB37E03002C5F7A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +128,7 @@
 			children = (
 				E924453A1DB35F760048B824 /* AppDelegate.swift */,
 				E924453F1DB360330048B824 /* Controllers */,
+				E9FA356B1DB36378002C5F7A /* ViewModels */,
 				E92445391DB35F510048B824 /* Resources */,
 			);
 			path = ArchitectureSample;
@@ -138,6 +155,7 @@
 		E92445391DB35F510048B824 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E9FA35761DB37E03002C5F7A /* Constants.swift */,
 				E91684EA1DB35ED20014CDF4 /* Assets.xcassets */,
 				E91684EF1DB35ED20014CDF4 /* Info.plist */,
 			);
@@ -147,11 +165,25 @@
 		E924453F1DB360330048B824 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9FA35671DB3630A002C5F7A /* MenuController.swift */,
+				E9FA35681DB3630A002C5F7A /* MenuController.xib */,
 				E92445411DB360C10048B824 /* ListController.swift */,
 				E92445421DB360C10048B824 /* ListController.xib */,
 			);
 			name = Controllers;
 			path = CustomManagement/Controllers;
+			sourceTree = "<group>";
+		};
+		E9FA356B1DB36378002C5F7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA356E1DB36EA6002C5F7A /* CatsDataSource.swift */,
+				E9FA35701DB36EB7002C5F7A /* DogsDataSource.swift */,
+				E9FA35721DB36EE2002C5F7A /* BirdsDataSource.swift */,
+				E9FA35741DB36EF1002C5F7A /* FishDataSource.swift */,
+				E9FA356C1DB363AA002C5F7A /* SideMenuDataSource.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		F90951B2665F362CC596030E /* Pods */ = {
@@ -277,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FA356A1DB3630A002C5F7A /* MenuController.xib in Resources */,
 				E91684EB1DB35ED20014CDF4 /* Assets.xcassets in Resources */,
 				E92445441DB360C10048B824 /* ListController.xib in Resources */,
 			);
@@ -351,8 +384,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FA356D1DB363AA002C5F7A /* SideMenuDataSource.swift in Sources */,
 				E924453D1DB35F760048B824 /* AppDelegate.swift in Sources */,
+				E9FA356F1DB36EA6002C5F7A /* CatsDataSource.swift in Sources */,
+				E9FA35691DB3630A002C5F7A /* MenuController.swift in Sources */,
+				E9FA35751DB36EF1002C5F7A /* FishDataSource.swift in Sources */,
+				E9FA35731DB36EE2002C5F7A /* BirdsDataSource.swift in Sources */,
 				E92445431DB360C10048B824 /* ListController.swift in Sources */,
+				E9FA35711DB36EB7002C5F7A /* DogsDataSource.swift in Sources */,
+				E9FA35771DB37E03002C5F7A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +446,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -455,6 +496,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -483,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD272DD5E08470BC33802FD0 /* Pods-ArchitectureSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2C24FP5V5L;
@@ -499,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42C0978CEE2C874DC71F84EF /* Pods-ArchitectureSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2C24FP5V5L;
