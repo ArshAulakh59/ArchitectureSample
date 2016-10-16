@@ -80,6 +80,7 @@ extension MenuDataSource {
     
     //MARK: Preselection
     func preselectCats() {
+        tableView.selectRow(at: IndexPath(row: Pet.Cats.rawValue, section: 0), animated: true, scrollPosition: .none)
         tableView(tableView, didSelectRowAt: IndexPath(row: Pet.Cats.rawValue, section: 0))
     }
 }
@@ -88,6 +89,10 @@ extension MenuDataSource: UITableViewDataSource, UITableViewDelegate {
     //MARK: Configure Table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Pet.All.rawValue
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.height/CGFloat(Pet.All.rawValue)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
